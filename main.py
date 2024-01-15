@@ -29,7 +29,7 @@ def count_letters(text):
 def print_report(path, count, dictionary):
     letter_list = list(dictionary.items())
     letter_list.sort(key=lambda x: x[1], reverse=True)
-    print(f"--- Begin report of {path} ---\n\n{count} words found in the document\n")
+    print(f"--- Begin report of {path} ---\n{count} words found in the document\n")
  
     for x in range(0,len(letter_list)):
         print(f"The '{letter_list[x][0]}' character was found {letter_list[x][1]} times")
